@@ -50,12 +50,12 @@ module.exports = {
         }
       ]
     },
-    unit: {
-      type: 'confirm',
-      require: true,
-      message: 'Setup unit tests with Karma + Mocha?',
-      default: true
-    }
+    // unit: {
+    //   type: 'confirm',
+    //   require: true,
+    //   message: 'Setup unit tests with Karma + Mocha?',
+    //   default: true
+    // }
   },
   filters: {
     '.eslintignore': 'eslint',
