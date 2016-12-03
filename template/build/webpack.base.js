@@ -14,12 +14,14 @@ module.exports = {
   },
   module: {
     rules: [
+      {{#if eslint}}
       {
         enforce: 'pre',
         test: /.js[x]?$/,
         loader: 'eslint-loader',
         exclude: /node_modules/
       },
+      {{/if}}
       {
         test: /\.js[x]?$/,
         loader: 'babel-loader',

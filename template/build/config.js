@@ -1,8 +1,8 @@
 const env = process.env.NODE_ENV
 
 const config = {
-  port: '4000',
-  title: 'react-webpack-starter',
+  port: '{{port}}',
+  title: '{{name}}',
   vendor: [
     'react',
     'react-dom',
@@ -12,7 +12,6 @@ const config = {
     'redux-thunk'
   ],
   babel: {
-    babelrc: false,
     plugins: [['import', [
       { libraryName: 'antd', style: true }
     ]]],

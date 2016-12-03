@@ -25,5 +25,6 @@ module.exports = {
     ],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }
 };
