@@ -11,12 +11,6 @@ const config = {
     'react-router',
     'redux-thunk'
   ],
-  babel: {
-    plugins: [['import', [
-      { libraryName: 'antd', style: true }
-    ]]],
-    presets: ['es2015', 'stage-0', 'react']
-  },
   postcss: [
     require('postcss-cssnext')({
       browsers: ['last 2 versions', 'ie > 8']
