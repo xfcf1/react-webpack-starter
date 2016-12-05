@@ -1,3 +1,9 @@
 .red {
   color: red;
 }
+h2 span {
+  color: blue;
+}
+span {
+  font-size: 18pt;
+}
