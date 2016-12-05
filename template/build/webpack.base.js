@@ -12,6 +12,15 @@ module.exports = {
     filename: '[name].js',
     publicPath: './'
   },
+  {{#if antd}}
+  resolve: {
+    extensions: ['.js', '.jsx', '.json']
+  },
+  {{else}}
+  resolve: {
+    extensions: ['.web.js', '.js', '.jsx', '.json']
+  },
+  {{/if}}
   module: {
     rules: [
       {{#if eslint}}
