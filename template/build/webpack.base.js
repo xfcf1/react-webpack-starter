@@ -12,7 +12,7 @@ module.exports = {
     filename: '[name].js',
     publicPath: './'
   },
-  {{#if antd}}
+  {{#if_eq theme 'antd'}}
   resolve: {
     extensions: ['.js', '.jsx', '.json']
   },
@@ -20,7 +20,7 @@ module.exports = {
   resolve: {
     extensions: ['.web.js', '.js', '.jsx', '.json']
   },
-  {{/if}}
+  {{/if_eq}}
   module: {
     rules: [
       {{#if eslint}}
