@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config build/webpack.prod.js",
-    "dev": "node build/server.js",
-    "unit": "karma start test/karma.conf.js --single-run"
+    "dev": "node build/server.js"{{#unit}},
+    "unit": "karma start test/karma.conf.js --single-run"{{/unit}}
   },
   "repository": {
     "type": "git",
