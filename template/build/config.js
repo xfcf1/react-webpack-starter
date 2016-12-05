@@ -1,5 +1,3 @@
-const env = process.env.NODE_ENV
-
 const config = {
   port: '{{port}}',
   title: '{{name}}',
@@ -16,12 +14,6 @@ const config = {
       browsers: ['last 2 versions', 'ie > 8']
     })
   ]
-}
-
-if (env === 'production') {
-  config.babel.presets.push('react-optimize')
-} else {
-  config.babel.presets.push('react-hmre')
 }
 
 module.exports = config
