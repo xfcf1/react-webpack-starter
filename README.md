@@ -5,7 +5,7 @@ Quick start with React and antd UI
 
 ```npm i vue-cli -g```
 
-```vue init xfcf1/react-webpack-starter My React Project```
+```vue init xfcf1/react-webpack-starter My_React_Project```
 
 ```cd your-project-name```
 
