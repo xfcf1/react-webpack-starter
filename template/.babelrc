@@ -6,5 +6,16 @@
     { "libraryName": "antd-mobile", "style": true }
     {{/if_eq}}
   ]]],
-  "presets": ["es2015", "stage-0", "react"]
+  "presets": ["es2015", "stage-0", "react"],
+  "env": {
+    "production": {
+      "presets": [
+        "react-optimize"
+      ]
+    },
+    "development": {
+      "presets": [
+        "react-hmre"
+      ]
+    }
 }
