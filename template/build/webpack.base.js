@@ -21,6 +21,7 @@ module.exports = {
     extensions: ['.web.js', '.js', '.jsx', '.json']
   },
   {{/if_eq}}
+  performance: {},
   module: {
     rules: [
       {{#if eslint}}
