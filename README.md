@@ -1,12 +1,28 @@
 # react-webpack-starter
 Quick start with React and antd UI
 
-# Install
+# How to use
 
-```npm i vue-cli -g```
+1.global install magic-cli  
 
-```vue init xfcf1/react-webpack-starter my_react_project```
+```
+$ yarn global add magic-cli
+```
+or  
+```
+$ npm install -g magic-cli
+```
 
-```cd my_react_project```
+2.init project in directory  
 
-```npm i```
+```  
+$ magic new xfcf1/react-webpack-starter my_react_project  
+```
+
+or you can use alias  
+
+```  
+$ magic alias aliasName xfcf1/react-webpack-starter  
+
+$ magic new aliasName my_react_project  
+```

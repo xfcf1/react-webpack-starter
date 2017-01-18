@@ -12,15 +12,13 @@ module.exports = {
     filename: '[name].js',
     publicPath: './'
   },
-  {{#if_eq theme 'antd'}}
   resolve: {
+    {{#if_eq theme 'antd'}}
     extensions: ['.js', '.jsx', '.json']
-  },
-  {{else}}
-  resolve: {
+    {{else}}
     extensions: ['.web.js', '.js', '.jsx', '.json']
+    {{/if_eq}}
   },
-  {{/if_eq}}
   performance: {},
   module: {
     rules: [

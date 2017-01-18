@@ -1,10 +1,6 @@
 {
   "plugins": [["import", [
-    {{#if_eq theme 'antd'}}
-    { "libraryName": "antd", "style": true }
-    {{else}}
-    { "libraryName": "antd-mobile", "style": true }
-    {{/if_eq}}
+    { "libraryName": "{{theme}}", "style": true }
   ]]],
   "presets": ["es2015", "stage-0", "react"],
   "env": {

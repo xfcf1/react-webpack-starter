@@ -81,11 +81,7 @@
     "webpack-hot-middleware": "^2.13.2"
   },
   "dependencies": {
-    {{#if_eq theme 'antd'}}
-    "antd": "latest",
-    {{else}}
-    "antd-mobile": "latest",
-    {{/if_eq}}
+    "{{theme}}": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-redux": "latest",

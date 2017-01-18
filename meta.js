@@ -37,18 +37,15 @@ module.exports = {
       when: 'eslint',
       type: 'list',
       message: 'Which eslint config would you like to use?',
-      choices: [
-        {
-          name: 'Standard (https://github.com/feross/standard)',
-          value: 'standard',
-          short: 'Standard'
-        },
-        {
-          name: 'none (configure it yourself)',
-          value: 'none',
-          short: 'none'
-        }
-      ]
+      choices: [{
+        name: 'Standard (https://github.com/feross/standard)',
+        value: 'standard',
+        short: 'Standard'
+      }, {
+        name: 'none (configure it yourself)',
+        value: 'none',
+        short: 'none'
+      }]
     },
     unit: {
       type: 'confirm',
