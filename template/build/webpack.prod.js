@@ -44,7 +44,13 @@ base.plugins.push(
 base.module.rules.push(
   {
     test: /\.css$/,
-    loader: extractCSS.extract(['css-loader?modules&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss-loader'])
+    loader: extractCSS.extract(['css-loader?modules&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss-loader']),
+    exclude: /node_modules/
+  },
+  {
+    test: /\.css$/,
+    loader: extractCSS.extract(['css-loader?modules&localIdentName=[name]__[local]___[hash:base64:5]', 'postcss-loader']),
+    include: /node_modules/
   },
   {
     test: /\.less$/,
