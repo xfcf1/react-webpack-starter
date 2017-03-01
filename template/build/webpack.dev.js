@@ -30,7 +30,17 @@ base.module.rules.push(
       'style-loader',
       'css-loader?modules&localIdentName=[name]__[local]___[hash:base64:5]',
       'postcss-loader'
-    ]
+    ],
+    exclude: /node_modules/
+  },
+  {
+    test: /\.css$/,
+    loaders: [
+      'style-loader',
+      'css-loader',
+      'postcss-loader'
+    ],
+    include: /node_modules/
   },
   {
     test: /\.less$/,
