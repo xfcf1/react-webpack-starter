@@ -82,12 +82,12 @@
   },
   "dependencies": {
     "{{theme}}": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-redux": "latest",
-    "react-router": "latest",
-    "react-router-redux": "latest",
-    "redux": "latest",
+    "react": "15.4.0",
+    "react-dom": "15.4.0",
+    "react-redux": "^5.0.1",
+    "react-router": "^3.0.0",
+    "react-router-redux": "^4.0.0",
+    "redux": "^3.6.0",
     "redux-act": "latest",
     "redux-thunk": "latest"
   }
